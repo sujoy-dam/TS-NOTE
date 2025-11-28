@@ -19,7 +19,7 @@ let y = undefined;
 **Explore Non Primitive Types**
 সাধারনত Non Primitive Data Type বলতে আমরা Arry ও Object কে বুঝি
 
-1. Arry
+**1. Arry**
 
 - String type Array
  ```
@@ -33,4 +33,9 @@ let y = undefined;
  ```
  let mixedArray: (string| number)[]= ["eggs", 12, "Milk", 31, "sugar"];
  ```
- 
+ - ts - tuple
+ ```
+ let coordinates :[number, number]= [20, 20]
+ let couple :[number, number]= [20, 20]
+ let something : [string, number, boolean]  =["sujoy", 12, true];
+  
