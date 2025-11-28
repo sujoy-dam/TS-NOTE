@@ -19,7 +19,7 @@ let y = undefined;
 **Explore Non Primitive Types**
 সাধারনত Non Primitive Data Type বলতে আমরা Arry ও Object কে বুঝি
 
-**1. Arry**
+**1. Arry Type**
 
 - String type Array
  ```
@@ -38,4 +38,61 @@ let y = undefined;
  let coordinates :[number, number]= [20, 20]
  let couple :[number, number]= [20, 20]
  let something : [string, number, boolean]  =["sujoy", 12, true];
-  
+  ```
+
+**Object, Literal & Optional Type**
+
+**2. Object Type**
+```
+const user:{
+    firstName: string;
+    middleName: string;
+    lastName: string;
+}= {
+    firstName: "Sujoy"
+    middleName: "Kumer"
+    lastName: "Dam"
+}
+
+```
+**Optional Type**
+```
+const user:{
+    firstName: string;
+    middleName?: string;
+    lastName: string;
+}= {
+    firstName: "Sujoy"
+    middleName: "Kumer"
+    lastName: "Dam"
+}
+
+```
+**Literal Type**
+- value যখন type হিসেবে ব্যবহৃত হয় তখন তাকে literal type বলে। এখানে Programming Hero টাইপ এবং vale দুটোই একসাথে।
+```
+const user:{
+    organization: "Programming Hero"
+    firstName: string;
+    middleName?: string;
+    lastName: string;
+}= {
+    organization: "Programming Hero"
+    firstName: "Sujoy"
+    middleName: "Kumer"
+    lastName: "Dam"
+}
+বা
+const user:{
+    readonly organization: string; // access modifier
+    firstName: string;
+    middleName?: string;
+    lastName: string;
+}= {
+    organization: "Programming Hero"
+    firstName: "Sujoy"
+    middleName: "Kumer"
+    lastName: "Dam"
+}
+
+```
